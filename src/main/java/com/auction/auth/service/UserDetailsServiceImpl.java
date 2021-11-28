@@ -8,7 +8,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
-//@Service("myUserDetailsService")
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 

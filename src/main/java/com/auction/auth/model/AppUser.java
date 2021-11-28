@@ -1,6 +1,5 @@
 package com.auction.auth.model;
 
-import com.auction.auth.model.dto.AppUserDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

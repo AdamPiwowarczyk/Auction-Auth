@@ -13,20 +13,20 @@ import org.springframework.context.annotation.Bean;
 @EnableEurekaClient
 public class AuthApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(AuthApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(AuthApplication.class, args);
+    }
 
-	@Bean
-	public InitializingBean loadData(RoleRepository roleRepository) {
-		return () -> {
-			if(!roleRepository.existsByRole(ERole.ROLE_ADMIN)) {
-				roleRepository.save(new Role(ERole.ROLE_ADMIN));
-			}
-			if(!roleRepository.existsByRole(ERole.ROLE_USER)) {
-				roleRepository.save(new Role(ERole.ROLE_USER));
-			}
-		};
-	}
+    @Bean
+    public InitializingBean loadData(RoleRepository roleRepository) {
+        return () -> {
+            if (!roleRepository.existsByRole(ERole.ROLE_ADMIN)) {
+                roleRepository.save(new Role(ERole.ROLE_ADMIN));
+            }
+            if (!roleRepository.existsByRole(ERole.ROLE_USER)) {
+                roleRepository.save(new Role(ERole.ROLE_USER));
+            }
+        };
+    }
 
 }

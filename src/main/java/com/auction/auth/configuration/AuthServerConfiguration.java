@@ -17,18 +17,17 @@ import org.springframework.security.oauth2.provider.token.store.InMemoryTokenSto
 @Configuration
 @EnableAuthorizationServer
 public class AuthServerConfiguration extends AuthorizationServerConfigurerAdapter {
-
     @Autowired
     private AuthenticationManager authenticationManager;
 
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
-                .withClient("kurs")
+                .withClient("client")
                 .authorizedGrantTypes("password")
                 .scopes("read", "write")
                 .autoApprove(true)
-                .secret(passwordEncoder().encode("kurs"));
+                .secret(passwordEncoder().encode("password"));
     }
 
     @Override

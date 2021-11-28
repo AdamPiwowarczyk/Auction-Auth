@@ -92,7 +92,7 @@ General error: "java.lang.IllegalStateException: The file is locked: nio:C:/User
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1247)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1236)
-	at com.auction.history.HistoryApplication.main(HistoryApplication.java:14)
+	at com.auction.purchase.PurchaseApplication.main(HistoryApplication.java:14)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Błąd ogólny: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/lothu/Desktop/Projekt inżynierski/auth/productDb.mv.db [1.4.200/7]"
 General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/lothu/Desktop/Projekt inżynierski/auth/productDb.mv.db [1.4.200/7]" [50000-200]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
@@ -174,7 +174,7 @@ General error: "java.lang.IllegalStateException: The file is locked: nio:C:/User
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1247)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1236)
-	at com.auction.history.HistoryApplication.main(HistoryApplication.java:14)
+	at com.auction.purchase.PurchaseApplication.main(HistoryApplication.java:14)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Błąd ogólny: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/lothu/Desktop/Projekt inżynierski/auth/productDb.mv.db [1.4.200/7]"
 General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/lothu/Desktop/Projekt inżynierski/auth/productDb.mv.db [1.4.200/7]" [50000-200]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
